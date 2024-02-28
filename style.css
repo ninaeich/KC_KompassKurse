@@ -1,0 +1,47 @@
+/* selector { properties} */
+* {
+    padding: 0; /* inner padding resetting */
+    margin: 0; /*outer padding resetting */
+}
+:root{
+    --elColor: #
+    
+}
+.body{
+    height: 100vh;
+    background-color: pink;
+
+display: grid; /* richtet die kinder komponeneten in ein gleichmässigen raster aus */
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+}
+
+.nav{
+    background-color: aquamarine;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1; 
+}
+.footer{
+    background-color: turquoise;
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
+
+.rbar{
+  background-color: lightpink;
+  grid-column: 11 / span 2;
+  grid-row: 2 / span 10;  
+}
+
+.lbar{
+    background-color: cadetblue;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.content{
+    background-color: whitesmoke;
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 10;
+}
+
